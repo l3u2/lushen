@@ -1,0 +1,7 @@
+bin
+.idea
+lushen.exe
+lushendata/logs/*
+!lushendata/logs/index.html
+lushendata/cmd/*
+!lushendata/cmd/index.html
