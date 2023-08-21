@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/beego/beego/v2/core/logs"
 	beego "github.com/beego/beego/v2/server/web"
+	"lushen/commands"
 	_ "lushen/routers"
 	"time"
 )
@@ -21,6 +22,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	commands.RegisterDataBase()
+	commands.RegisterModel()
 
 	beego.Run(":" + *Port)
 }

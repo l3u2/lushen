@@ -2,12 +2,12 @@ package function
 
 import (
 	"archive/zip"
-	"atsjkhelper/libraries/crc"
 	"bufio"
 	"errors"
 	"hash/crc64"
 	"io"
 	"io/ioutil"
+	"lushen/libraries/crc"
 	"net/http"
 	"os"
 	"path"
